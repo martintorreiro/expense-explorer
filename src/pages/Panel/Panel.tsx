@@ -67,9 +67,9 @@ const Panel = () => {
                                 <div>
                                     <div className='controls'>
                                         <HiSearch />
-                                        <HiOutlineDotsVertical
-                                            onClick={openMenu}
-                                        />
+                                        <button onClick={openMenu}>
+                                            <HiOutlineDotsVertical />
+                                        </button>
                                         {showMenu && (
                                             <PanelMenu
                                                 closeMenu={() =>
